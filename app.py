@@ -32,9 +32,9 @@ def init():
         img = img.reshape(1, img.shape[0], img.shape[1], img.shape[2]) #rgb to reshape to 1,100,100,3
         # img.shape
         pred=model.predict(img)
-        return(render_template("index1.html", result=str(pred)))
+        return(render_template("index.html", result=str(pred)))
     else:
-        return(render_template("index1.html", result="WAITING"))
+        return(render_template("index.html", result="WAITING"))
     
 if __name__ == "__main__":
     app.run()
