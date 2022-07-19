@@ -6,7 +6,7 @@
 
 from flask import Flask, render_template, request
 from werkzeug.utils import secure_filename
-from skimage import io
+# from skimage import io
 from keras.models import load_model
 import cv2
 from PIL import Image #use PIL
